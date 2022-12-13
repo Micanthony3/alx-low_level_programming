@@ -1,18 +1,24 @@
+#include <stdio.h>
+
 #include <stdlib.h>
 
 #include <time.h>
 
-#include <stdio.h>
+
 
 /**
+
+ * main - Entry point
+
  *
- *  * main - heart breaker
+
+ * Description: print the last digit in random number
+
  *
- *   *
- *
- *    * Return: Always return 0 (Success)
- *
- *     */
+
+ * Return: Always return 0 (Sucess)
+
+ */
 
 
 
@@ -20,26 +26,52 @@ int main(void)
 
 {
 
-		int n;
+  int n;
+
+  int a;
 
 
 
-			srand(time(0));
+  srand(time(0));
 
-				n = rand() - RAND_MAX / 2;
+  n = rand() - RAND_MAX / 2;
 
-					if (n > 0)
+  a = n % 10;
 
-								printf("%d is positive\n", n);
+  if (a > 5)
 
-						else if (n == 0)
 
-									printf("%d is zero\n", n);
 
-							else
+    {
 
-										printf("%d is negative\n", n);
+      printf("Last digit of %d is %d and is greater than 5\n", n, a);
 
-								return (0);
+    }
+
+
+
+  else if (a == 0)
+
+
+
+    {
+
+      printf("Last digit of %d is %d and is 0\n", n, a);
+
+    }
+
+
+
+  else
+
+
+
+    {
+
+      printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+
+    }
+
+  return (0);
 
 }
