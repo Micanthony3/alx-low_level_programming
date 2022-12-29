@@ -1,5 +1,4 @@
 #include "kasiye.h"
-#include <stdio.h>
 
 /**
  *  reset_to_98 - take pointer to an int parameter and updates
