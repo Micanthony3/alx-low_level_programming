@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdio.h>:wq!
+
 /**
  * main - Entry point
  *
@@ -12,7 +13,7 @@ int main(void)
 
 	c = 'a';
 	d = 'A';
- 		while
+		while
 			(c <= 'z') {
 				putchar(c);
 				c++;
