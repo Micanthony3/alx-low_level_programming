@@ -1,5 +1,4 @@
-#include <stdio.h>:wq!
-
+#include <stdio.h>
 /**
  * main - Entry point
  *
